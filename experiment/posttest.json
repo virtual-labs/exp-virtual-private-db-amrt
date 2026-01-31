@@ -2,37 +2,105 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What happens when Row Level Security (RLS) is enabled on a table with an active policy?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "All users can see all rows",
+        "b": "Queries are automatically filtered based on the policy",
+        "c": "The table becomes read-only",
+        "d": "The database performance stops"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "RLS restricts access, not allows full access.",
+        "b": "The database automatically applies policy conditions to queries.",
+        "c": "RLS does not make tables read-only.",
+        "d": "RLS does not stop database operations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If two users query the same table protected by VPD, what is the expected result?",
+      "answers": {
+        "a": "Both users see identical data",
+        "b": "Both users get access denied",
+        "c": "Each user sees only the rows allowed by the policy",
+        "d": "Only the admin can see data"
+      },
+      "explanations": {
+        "a": "VPD filters data per user.",
+        "b": "Access is restricted, not fully denied.",
+        "c": "VPD enforces user-aware row visibility.",
+        "d": "Non-admin users can still see permitted rows."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which component actually enforces row-level filtering during query execution?",
+      "answers": {
+        "a": "Application code",
+        "b": "Database engine",
+        "c": "Client system",
+        "d": "Operating system"
+      },
+      "explanations": {
+        "a": "VPD works without application changes.",
+        "b": "The database engine applies the security policy.",
+        "c": "Client systems do not enforce database policies.",
+        "d": "The OS is not responsible for row filtering."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why does VPD not require changes to application code?",
+      "answers": {
+        "a": "Policies are enforced at the database level",
+        "b": "Applications automatically encrypt queries",
+        "c": "Users manually filter rows",
+        "d": "Views are mandatory"
+      },
+      "explanations": {
+        "a": "VPD transparently applies policies inside the database.",
+        "b": "Encryption is unrelated to VPD behavior.",
+        "c": "Users do not manually filter data.",
+        "d": "Views are optional, not mandatory."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What security benefit does VPD mainly provide?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Faster query execution",
+        "b": "Protection of confidential rows from unauthorized users",
+        "c": "Automatic database backups",
+        "d": "Reduced storage usage"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "VPD focuses on security, not performance.",
+        "b": "VPD prevents unauthorized access to sensitive rows.",
+        "c": "Backups are unrelated to VPD.",
+        "d": "Storage usage is unaffected."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "After implementing VPD, which action best verifies that it is working correctly?",
+      "answers": {
+        "a": "Checking table size",
+        "b": "Running queries as different users",
+        "c": "Restarting the database",
+        "d": "Creating indexes"
+      },
+      "explanations": {
+        "a": "Table size does not show access control.",
+        "b": "Different users should see different rows.",
+        "c": "Restarting does not verify policies.",
+        "d": "Indexes do not test security."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
