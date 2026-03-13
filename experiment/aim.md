@@ -1,1 +1,1 @@
-The objective of this experiment is to restrict access to data at the row level based on user identity. The outcome of this experiment is to implement user-aware access control to protect confidential information
+To implement row-level access control based on user identity in order to restrict unauthorized access and protect confidential data.
