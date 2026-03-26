@@ -1,7 +1,7 @@
-[Virtual Private Database (VPD)](https://www.geeksforgeeks.org/dbms/virtual-private-database-vpd/)
+[Oracle Database Security Guide: Virtual Private Database (VPD)](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/using-virtual-private-database-to-implement-security-policies.html)
 
-[Virtual Private Database (VPD) – Oracle Implementation](https://oracle-base.com/articles/8i/virtual-private-databases)
+[Microsoft SQL Server: Row-Level Security](https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security)
 
-[Row Level Security (RLS)](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
+[PostgreSQL: Row Security Policies](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)
 
-[RLS Best Practices and Examples](https://supabase.com/docs/guides/database/postgres/row-level-security)
+[NIST Special Publication 800-53: Security and Privacy Controls for Information Systems and Organizations](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final)
