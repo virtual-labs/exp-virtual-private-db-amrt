@@ -23,12 +23,15 @@
 
 1. Read the explanation of Row-Level Security.
 2. Toggle the **RLS is DISABLED** switch to **RLS is ENABLED**.
+<br>
    <img src="images/RLSenable1.png" alt="RLS Disabled">
+   <br>
    <img src="images/RLSenable2.png" alt="RLS Enabled">
 3. Assign required security policies to different organizational roles by clicking Assign for the required policy:
    - **HR Manager**: Assign the **Full Employee Access** policy.
    - **HR Assistant**: Assign the **Basic Information Access** policy.
    - **Sales Representative**: Assign the **Personal Record Access** policy.
+   <br>
      <img src="images/RLSenable3.png" alt="Policy Assigned">
    - **IT Staff**: Assign the **Department Based Access** (or **Basic Information Access**).
    - **Finance Analyst**: Assign the **Department Based Access** policy.
@@ -51,7 +54,9 @@
 2. Note how the Active Security Policies have modified the viewport:
    - For example, if you logged in as a Sales Representative, you will notice that you can only see your own record (`Personal Record Access` policy).
    - If logged in as an HR Assistant, you will see all records, but the salary information will be masked (`Basic Information Access` policy).
+   <br>
    <img src="images/UserLogin2.png" alt="Test Data Access View">
+   <br>
 
 3. Review the "Active Security Policies" section below the table to confirm which policy is currently enforced.
 4. Click the **Logout** button at the top right to return to Step 4 and test accessibility with a different user role.
