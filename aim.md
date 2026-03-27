@@ -1,0 +1,1 @@
+To implement row-level access control based on user identity in order to restrict unauthorized access and protect confidential data.
